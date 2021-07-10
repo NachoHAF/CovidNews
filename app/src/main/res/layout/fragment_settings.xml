@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottom_app_bar_height"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomStyle.Settings.Header"
+                android:layout_marginStart="@dimen/settings_header_horizontal_margin"
+                android:layout_marginTop="@dimen/settings_header_vertical_margin"
+                android:layout_marginEnd="@dimen/settings_header_horizontal_margin"
+                android:layout_marginBottom="@dimen/settings_text_vertical_margin"
+                android:text="@string/settings_header_appearance" />
+
+            <com.upsa.covidnews.views.SettingsItem
+                android:id="@+id/theme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:siIcon="@drawable/ic_tshirt"
+                app:siTitle="Theme"
+                app:siValue="@string/light">
+            </com.upsa.covidnews.views.SettingsItem>
+
+
+
+            <com.upsa.covidnews.views.SettingsItem
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:siIcon="@drawable/ic_language"
+                app:siTitle="Language"
+                app:siValue="@string/language_select"/>
+
+            <View android:layout_height="1px" android:background="#000000" android:layout_width="fill_parent"/>
+
+            <TextView
+            style="@style/CustomStyle.Settings.Header"
+            android:layout_marginStart="@dimen/settings_header_horizontal_margin"
+            android:layout_marginTop="@dimen/settings_header_vertical_margin"
+            android:layout_marginEnd="@dimen/settings_header_horizontal_margin"
+            android:layout_marginBottom="@dimen/settings_text_vertical_margin"
+            android:text="@string/settings_header_about" />
+
+            <com.upsa.covidnews.views.SettingsItem
+                android:id="@+id/github"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:siIcon="@drawable/ic_github"
+                app:siTitle="Github"
+                app:siValue="https://github.com" />
+
+            <com.upsa.covidnews.views.SettingsItem
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:siIcon="@drawable/ic_author"
+                app:siTitle="Author"
+                app:siValue="Nacho" />
+
+            <com.upsa.covidnews.views.SettingsItem
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:siIcon="@drawable/ic_version"
+                app:siTitle="Version"
+                app:siValue="1.0" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back_icon"/>
+
+        <TextView
+            style="@style/CustomStyle.Settings.Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_name"
+            android:layout_marginLeft="25dp"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/statsFragment">
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.upsa.covidnews.ui.StatsFragment"
+        android:label="StatsFragment"
+        android:layout="@layout/fragment_stats"/>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.upsa.covidnews.ui.NewsFragment"
+        android:label="NewsFragment"
+        android:layout="@layout/fragment_news"/>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.upsa.covidnews.ui.HelpFragment"
+        android:label="HelpFragment"
+        android:layout="@layout/fragment_help">
+        <action
+            android:id="@+id/action_helpFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.upsa.covidnews.ui.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+</navigation>

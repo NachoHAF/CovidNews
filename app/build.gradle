@@ -1,0 +1,113 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.kapt'
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Mundo\\AndroidKeyStore\\MyAndroidKeyStore.jks')
+            storePassword 'Nacho212'
+            keyAlias 'covidnews_app'
+            keyPassword 'Nacho212'
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.upsa.covidnews"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 2
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        kapt {
+            arguments {
+                arg("room.schemaLocation","$projectDir/schemas".toString())
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            applicationIdSuffix ".debug"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    def nav_version = "2.4.0-alpha04"
+
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Androidx navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    //Retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //ViewPager2
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    //Recyclerview
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Room
+    def room_version = "2.3.0"
+    implementation("androidx.room:room-runtime:$room_version")
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room_version")
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$room_version")
+
+    //Easy permission
+    implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0-alpha02"
+
+    //TimeAgo
+    implementation 'com.github.marlonlom:timeago:4.0.3'
+
+    //Image Round
+    implementation 'com.rishabhharit.roundedimageview:RoundedImageView:0.8.4'
+
+    //Web View
+    implementation "io.github.kaustubhpatange:cwt:0.1.7"
+
+
+}

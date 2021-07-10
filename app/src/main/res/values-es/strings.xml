@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CovidNews</string>
+    <string name="stats">Estadísticas</string>
+    <string name="news">Noticias</string>
+    <string name="help">Ayuda</string>
+    <string name="share">compartir</string>
+    <string name="slag">¡Protegerse es la mayor contribución!</string>
+    <string name="stopCorona">#STOPCORONA</string>
+    <string name="statistic">ESTADÍSTICAS</string>
+    <string name="advise1">Mantén Distancia</string>
+    <string name="advise2">Usa Máscara</string>
+    <string name="advise3">Lava Manos</string>
+    <string name="title1">Total Confirmado</string>
+    <string name="title2">Total Fallecido</string>
+    <string name="title3">Recuperado</string>
+    <string name="title4">Activo</string>
+    <string name="title5">Crítico</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="settings_name">Ajustes</string>
+    <string name="settings_header_appearance">Aspecto</string>
+    <string name="settings_header_about">Acerca de</string>
+    <string name="settings_title_github">Github</string>
+    <string name="Symptoms">Síntomas</string>
+    <string name="call_for_help">Llamar por ayuda</string>
+    <string name="fever">Fiebre</string>
+    <string name="dry_cough">Tos seca</string>
+    <string name="fatigue">Fatiga</string>
+    <string name="sputum_production">Producción de esputo</string>
+    <string name="breath">Falta de aire</string>
+    <string name="pain">Dolor muscular o articular</string>
+    <string name="language_select">Español</string>
+
+
+    <string-array name="countries_spinner">
+        <item>ESP</item>
+        <item>Mundo</item>
+    </string-array>
+</resources>

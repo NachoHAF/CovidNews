@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">CovidNews</string>
+    <string name="stats">Stats</string>
+    <string name="news">News</string>
+    <string name="help">Help</string>
+    <string name="share">share</string>
+    <string name="stopCorona">#STOPCORONA</string>
+    <string name="slag">Protecting yourself is the greatest contribution!</string>
+    <string name="statistic">STATISTICS</string>
+    <string name="advise1">Keep Distance</string>
+    <string name="advise2">Wear Mask</string>
+    <string name="advise3">Wash Hands</string>
+    <string name="title1">Total Confirmed</string>
+    <string name="title2">Total Deceased</string>
+    <string name="title3">Recovered</string>
+    <string name="title4">Active</string>
+    <string name="title5">Critical</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="countries_spinner">
+        <item>Spain</item>
+        <item>World</item>
+    </string-array>
+    <string name="settings_name">Settings</string>
+    <string name="settings_header_appearance">Appearance</string>
+    <string name="theme_title" translatable="false">Theme</string>
+    <string name="settings_header_about">About</string>
+    <string name="settings_title_github">Github</string>
+    <string name="theme" translatable="false">Theme</string>
+    <string name="language" translatable="false">Language</string>
+    <string name="light" translatable="false">Light</string>
+    <string name="Symptoms">Symptoms</string>
+    <string name="call_for_help">Call for help</string>
+    <string name="fever">Fever</string>
+    <string name="dry_cough">Dry cough</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="sputum_production">Sputum production</string>
+    <string name="breath">Shortness of breath</string>
+    <string name="pain">Muscle pain or joint pain</string>
+    <string name="title_news" translatable="false">Covid News</string>
+    <string name="language_select">English</string>
+    <string name="naviStats" translatable="false">Stats</string>
+    <string name="naviNews" translatable="false">News</string>
+    <string name="naviHelp" translatable="false">Help</string>
+    <string name="naviEstadi" translatable="false">Estadísticas</string>
+    <string name="naviNoticias" translatable="false">Noticias</string>
+    <string name="naviAyuda" translatable="false">Ayuda</string>
+
+</resources>

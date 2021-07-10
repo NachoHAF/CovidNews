@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingsItem">
+        <attr name="dividerColor" format="reference" />
+        <attr name="siIcon" format="reference" />
+        <attr name="siTitle" format="string" />
+        <attr name="siValue" format="string" />
+    </declare-styleable>
+</resources>

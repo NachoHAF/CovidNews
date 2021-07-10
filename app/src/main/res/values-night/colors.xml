@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="statistic_color">#FFFFFF</color>
+    <color name="totalconfirmed_color">#2B2841</color>
+    <color name="totaldeceased_color">#2B2841</color>
+    <color name="recovered_color">#2B2841</color>
+    <color name="active_color">#2B2841</color>
+    <color name="critical_color">#2B2841</color>
+    <color name="helpbackground_color">#121212</color>
+    <color name="toolbar_color">#141d26</color>
+    <color name="cardview">#2f3738</color>
+</resources>
